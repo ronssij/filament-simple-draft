@@ -3,7 +3,7 @@
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/awcodes/headings.svg?style=flat-square)](https://packagist.org/packages/ronssij/filament-simple-draft)
 [![Total Downloads](https://img.shields.io/packagist/dt/awcodes/headings.svg?style=flat-square)](https://packagist.org/packages/ronssij/filament-simple-draft)
 
-This pacakge is a simple plugin to allow required field on forms to be dratable. Filament field component has already had capability to do it on demand using:
+This package is a simple plugin to allow required fields on forms to be draftable. Filament field components already could do it on demand using:
 ```php
 ->nullable(true|false)
 ```

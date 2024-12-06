@@ -1,0 +1,28 @@
+{
+    "name": "ronssij/filament-simple-draft",
+    "description": "Is a simple FilamentPHP plugin that allows to save forms as drafts.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ronssij\\FilamentSimpleDraft\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "CJ Ronxel Cabug-os",
+            "email": "ronssij@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "filament/support": "^3.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ronssij\\FilamentSimpleDraft\\FilamentSimpleDraftServiceProvider"
+            ]
+        }
+    }
+}

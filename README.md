@@ -72,6 +72,35 @@ class CreateUser extends CreateRecord
 }
 ```
 
+Resource form usage:
+
+By chaining `->draftable()` on any form fields it will be required when Published and nullable on Save Draft.
+```php
+
+use Filament\Forms;
+use Filament\Forms\Form;
+
+public static function form(Form $form): Form
+{
+    return $form
+        ->schema([
+            Forms\Components\TextInput::make('model')
+                ->validationAttribute('model name')
+                ->label('Model Name')
+                ->required(),
+            Forms\Components\TextInput::make('type')
+                ->validationAttribute('type or classification')
+                ->label('Type or Classification')
+                ->draftable()
+            Forms\Components\TextInput::make('size')
+                ->suffix('ft.')
+                ->draftable()
+                ->numeric(),
+        ]);
+}
+
+```
+
 <!-- ## Testing
 ```bash
 composer test

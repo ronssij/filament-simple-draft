@@ -1,7 +1,8 @@
 # A simple FilamentPHP plugin that allows to save forms as drafts.
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/awcodes/headings.svg?style=flat-square)](https://packagist.org/packages/ronssij/filament-simple-draft)
-[![Total Downloads](https://img.shields.io/packagist/dt/awcodes/headings.svg?style=flat-square)](https://packagist.org/packages/ronssij/filament-simple-draft)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/ronssij/filament-simple-draft.svg?style=flat-square)](https://packagist.org/packages/ronssij/filament-simple-draft)
+[![Total Downloads](https://img.shields.io/packagist/dt/ronssij/filament-simple-draft)](https://packagist.org/packages/ronssij/filament-simple-draft/stats)
+[![Licence](https://img.shields.io/github/license/ronssij/filament-simple-draft)](LICENSE.md)
 
 This package is a simple plugin to allow required fields on forms to be draftable. Filament field components already could do it on demand using:
 ```php

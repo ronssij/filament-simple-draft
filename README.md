@@ -79,23 +79,24 @@ By chaining `->draftable()` on any form fields it will be required when Publishe
 
 use Filament\Forms;
 use Filament\Forms\Form;
+use FilamentTiptapEditor\Enums\TiptapOutput;
+use FilamentTiptapEditor\TiptapEditor;
 
 public static function form(Form $form): Form
 {
     return $form
         ->schema([
-            Forms\Components\TextInput::make('model')
-                ->validationAttribute('model name')
-                ->label('Model Name')
-                ->required(),
-            Forms\Components\TextInput::make('type')
-                ->validationAttribute('type or classification')
-                ->label('Type or Classification')
+            Forms\Components\TextInput::make('title')
+                ->label('Blog title')
                 ->draftable()
-            Forms\Components\TextInput::make('size')
-                ->suffix('ft.')
+            Forms\Components\Textarea::make('description')
+                ->label('Blog description')
+                ->rows(5)
                 ->draftable()
-                ->numeric(),
+            TiptapEditor::make('content')
+                ->label('Blog content')
+                ->draftable()
+                ->output(TiptapOutput::Html)
         ]);
 }
 

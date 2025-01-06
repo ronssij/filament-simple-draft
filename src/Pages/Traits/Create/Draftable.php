@@ -58,7 +58,7 @@ trait Draftable
     {
         $record = new ($this->getModel())([
             ...$data,
-            config('filament-simple-drafts.publishable_column') => ! $this->shouldSaveAsDraft ? now() : null,
+            config('filament-simple-draft.publishable_column') => ! $this->shouldSaveAsDraft ? now() : null,
         ]);
 
         $record->save();

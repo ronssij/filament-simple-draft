@@ -45,7 +45,7 @@ trait Draftable
     {
         $record->update([
             ...$data,
-            config('filament-simple-drafts.publishable_column') => ! $this->shouldSaveAsDraft ? now() : null,
+            config('filament-simple-draft.publishable_column') => ! $this->shouldSaveAsDraft ? now() : null,
         ]);
 
         return $record;

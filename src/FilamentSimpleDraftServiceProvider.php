@@ -3,8 +3,7 @@
 namespace Ronssij\FilamentSimpleDraft;
 
 use Filament\Forms\Components\Field;
-use Filament\Forms\Get;
-use Illuminate\Support\Arr;
+use Livewire\Component;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 

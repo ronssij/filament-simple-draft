@@ -3,7 +3,6 @@
 namespace Ronssij\FilamentSimpleDraft;
 
 use Filament\Forms\Components\Field;
-use Livewire\Component;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -28,7 +27,7 @@ class FilamentSimpleDraftServiceProvider extends PackageServiceProvider
     public function registerComponentMacros(): void
     {
         Field::macro('draftable', function (string $key = 'is_published') {
-            $this->nullable(fn (Component $livewire) => $livewire->shouldSaveAsDraft);
+            $this->nullable(fn ($livewire) => $livewire->shouldSaveAsDraft);
 
             return $this;
         });

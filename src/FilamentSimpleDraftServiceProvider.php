@@ -27,7 +27,11 @@ class FilamentSimpleDraftServiceProvider extends PackageServiceProvider
     public function registerComponentMacros(): void
     {
         Field::macro('draftable', function (string $key = 'is_published') {
-            $this->nullable(fn ($livewire) => $livewire->shouldSaveAsDraft);
+            $this->nullable(function ($livewire) {
+                return property_exists($livewire, 'shouldSaveAsDraft')
+                    ? $livewire->shouldSaveAsDraft
+                    : true;
+            });
 
             return $this;
         });

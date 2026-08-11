@@ -1,5 +1,7 @@
 # A simple FilamentPHP plugin that allows to save forms as drafts.
 
+<img src="https://raw.githubusercontent.com/ronssij/filament-simple-draft/1.x/screens/banner.jpg" alt="filament-simple-draft banner">
+
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/ronssij/filament-simple-draft.svg?style=flat-square)](https://packagist.org/packages/ronssij/filament-simple-draft)
 [![Total Downloads](https://img.shields.io/packagist/dt/ronssij/filament-simple-draft)](https://packagist.org/packages/ronssij/filament-simple-draft/stats)
 [![Licence](https://img.shields.io/github/license/ronssij/filament-simple-draft)](LICENSE.md)
